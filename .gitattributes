@@ -1,0 +1,66 @@
+###############################################################################
+# Varsayılan davranışı satır sonlarını otomatik olarak normalize etmeye ayarla.
+###############################################################################
+* text=auto
+
+###############################################################################
+# Komut satırı diff için varsayılan davranışı ayarla.
+# Bu, csharp dosyaları için varsayılan olarak etkin olmayan
+# eski msysgit sürümleri için gereklidir.
+# Not: Sadece komut satırında kullanılır
+###############################################################################
+#*.cpp    diff=csharp
+
+###############################################################################
+# Proje ve çözüm dosyaları için birleştirme sürücüsünü ayarla
+# Komut satırından birleştirme yapılırken, çakışmalar varsa dosyalara diff
+# işaretçileri ekler (VS'den birleştirme ayarları bundan etkilenmez, VS'de
+# diff işaretçileri asla eklenmez). Diff işaretçileri, aşağıdaki dosya
+# uzantılarının VS'de yüklenememesine neden olabilir. Alternatif olarak,
+# bu dosyaları ikili olarak işlemek ve bu nedenle her birleştirmede
+# her zaman çakışma ve kullanıcı müdahalesi gerektirmek olarak
+# ele alabilirsiniz. Bunu yapmak için, aşağıdaki girdilerin önündeki
+# yorum satırını kaldırın
+###############################################################################
+#*.sln       merge=binary
+#*.cppproj   merge=binary
+#*.vbproj    merge=binary
+#*.vcxproj   merge=binary
+#*.vcproj    merge=binary
+#*.dbproj    merge=binary
+#*.fsproj    merge=binary
+#*.lsproj    merge=binary
+#*.wixproj   merge=binary
+#*.modelproj merge=binary
+#*.sqlproj   merge=binary
+#*.wwaproj   merge=binary
+
+###############################################################################
+# resim dosyaları için davranış
+# resim dosyaları varsayılan olarak ikili olarak işlenir.
+###############################################################################
+#*.jpg   binary
+#*.png   binary
+#*.gif   binary
+
+###############################################################################
+# yaygın belge formatları için diff davranışı
+# Binary belge formatlarını diff öncesinde metne dönüştürün. Bu özellik
+# sadece komut satırından kullanılabilir. Aşağıdaki girdileri yorum satırından
+# çıkararak etkinleştirebilirsiniz.
+###############################################################################
+#*.doc   diff=astextplain
+#*.DOC   diff=astextplain
+#*.docx  diff=astextplain
+#*.DOCX  diff=astextplain
+#*.dot   diff=astextplain
+#*.DOT   diff=astextplain
+#*.pdf   diff=astextplain
+#*.PDF   diff=astextplain
+#*.rtf   diff=astextplain
+#*.RTF   diff=astextplain
+
+# Bash komut dosyalarının her zaman lf satır sonu karakterlerini kullanmasını
+# sağlayarak, bir çoğaltmanın Windows üzerinden Unix'e bir dosya paylaşımından
+# erişilmesi durumunda komut dosyalarının çalışmasını sağlayın.
+*.sh text eol=lf

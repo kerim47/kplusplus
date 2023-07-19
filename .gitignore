@@ -1,0 +1,337 @@
+# Visual Studio geçici dosyaları, derleme sonuçları ve
+# popüler Visual Studio eklentileri tarafından oluşturulan dosyaları yoksayın.
+##
+## https://github.com/github/gitignore/blob/master/VisualStudio.gitignore dosyasından alındı
+
+# Kullanıcıya özel dosyalar
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Kullanıcıya özel dosyalar (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Derleme sonuçları
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2015/2017 önbelleği/ayarları dizini
+.vs/
+# wwwroot içinde projenin statik dosyalarını oluşturan görevleriniz varsa yorum satırını kaldırın
+#wwwroot/
+
+# Visual Studio 2017 tarafından otomatik olarak oluşturulan dosyalar
+Generated\ Files/
+
+# MSTest test sonuçları
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# ATL Projesinin Derleme Sonuçları
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Sonuçları
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Visual Studio tarafından oluşturulan dosyalar
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+*.g.cs
+
+# Chutzpah Test dosyaları
+_Chutzpah*
+
+# Visual C++ önbellek dosyaları
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio profilleyici
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio İzleme Dosyaları
+*.e2e
+
+# TFS 2012 Yerel Çalışma Alanı
+$tf/
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper .NET kodlama eklentisi
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode .NET kodlama eklentisi
+.JustCode
+
+# TeamCity derleme eklentisi
+_TeamCity*
+
+# DotCover Code Coverage Aracı
+*.dotCover
+
+# AxoCover Code Coverage Aracı
+.axoCover/*
+!.axoCover/settings.json
+
+# Visual Studio kod kapsamı sonuçları
+*.coverage
+*.coveragexml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+*.ncrunchsolution
+*.ncrunchproject
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Installshield çıkış klasörü
+[Ee]xpress/
+
+# DocProject belge oluşturma eklentisi
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once dizini
+publish/
+
+# Web Yayını Çıkışı
+*.[Pp]ublish.xml
+*.azurePubxml
+# Not: Web dağıtım ayarlarınızı check-in etmek isterseniz, aşağıdaki satırın başındaki yorum işaretini kaldırın,
+# ancak bu dosyalardaki (potansiyel parolalarla birlikte) hassas bilgiler şifrelenmemiş olacak
+*.pubxml
+*.publishproj
+
+# Microsoft Azure Web Uygulaması yayın ayarları. Azure Web Uygulaması yayın ayarlarını check-in etmek istemiyorsanız
+# aşağıdaki satırın başındaki yorum işaretini kaldırın, ancak bu betiklerdeki hassas bilgiler şifrelenmemiş olacak
+PublishScripts/
+
+# NuGet Paketleri
+*.nupkg
+# Package Restore nedeniyle paketler klasörü yoksayılabilir
+**/[Pp]ackages/*
+# MSBuild hedefi olarak kullanıldığı için build/ hariç tutulmalıdır.
+!**/[Pp]ackages/build/
+# Gerekirse yorum satırından çıkarın, ancak genellikle gerektiğinde yeniden oluşturulur
+#!**/[Pp]ackages/repositories.config
+# NuGet v3'ün project.json dosyaları daha fazla yoksayılabilir dosya üretir
+*.nuget.props
+*.nuget.targets
+
+# Microsoft Azure Derleme Çıktısı
+csx/
+*.build.csdef
+
+# Microsoft Azure Emülatörü
+ecf/
+rcf/
+
+# Windows Store uygulama paketi dizinleri ve dosyaları
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+
+# Visual Studio önbellek dosyaları
+# .cache ile biten dosyalar yoksayılabilir
+*.[Cc]ache
+# ancak .cache ile biten dizinleri takip edin
+!*.[Cc]ache/
+
+# Diğerleri
+ClientBin/
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# Güçlü ad dosyalarını dahil etmek, bir güvenlik riski oluşturabilir
+# (https://github.com/github/gitignore/pull/2483#issue-259490424)
+#*.snk
+
+# Birden çok iş akışı olduğu için bower_components satırının yorum işaretini kaldır
+
+ın
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+#bower_components/
+
+# RIA/Silverlight projeleri
+Generated_Code/
+
+# Eski bir proje dosyasını daha yeni bir Visual Studio sürümüne dönüştürmek için yedekleme ve rapor dosyaları
+# Gerekli değildir, çünkü git var ;-)
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# SQL Server dosyaları
+*.mdf
+*.ldf
+*.ndf
+
+# İş Zekası projeleri
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+*.rptproj.rsuser
+
+# Microsoft Fakes
+FakesAssemblies/
+
+# GhostDoc eklentisi yapılandırma dosyası
+*.GhostDoc.xml
+
+# Node.js Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Visual Studio 6 derleme günlüğü
+*.plg
+
+# Visual Studio 6 çalışma alanı seçenekleri dosyası
+*.opt
+
+# Visual Studio 6 otomatik olarak oluşturulan çalışma alanı dosyası (açık dosyaları vb. içerir)
+*.vbw
+
+# Visual Studio LightSwitch derleme çıktısı
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
+# Paket bağımlılığı yöneticisi
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# CodeRush kişisel ayar dosyası
+.cr/personal
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Cake - Eğer kullanıyorsanız yorum satırını kaldırın
+# tools/**
+# !tools/packages.config
+
+# Tabs Studio
+*.tss
+
+# Telerik's JustMock yapılandırma dosyası
+*.jmconfig
+
+# BizTalk derleme çıktısı
+*.btp.cs
+*.btm.cs
+*.odx.cs
+*.xsd.cs
+
+# OpenCover UI analiz sonuçları
+OpenCover/
+
+# Azure Stream Analytics yerel çalışma çıktısı
+ASALocalRun/
+
+# MSBuild Binary ve Structured Log
+*.binlog
+
+# NVidia Nsight GPU debugger yapılandırma dosyası
+*.nvuser
+
+# MFractors (Xamarin üretkenlik aracı) çalışma klasörü
+.mfractor/
+
+# Yerel Tarihçe için Visual Studio
+.localhistory/
